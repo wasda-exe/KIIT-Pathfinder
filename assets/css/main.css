@@ -228,6 +228,9 @@ input, select, textarea {
 			color: inherit;
 			text-decoration: none;
 		}
+		header a {
+			text-decoration: underline;
+		}
 
 	h1 {
 		font-size: 4rem;
@@ -2665,7 +2668,9 @@ input, select, textarea {
 			}
 
 			.image.fit img {
+				object-fit: cover;
 				width: 100%;
+				height: 250px;
 			}
 
 		.image.main {
