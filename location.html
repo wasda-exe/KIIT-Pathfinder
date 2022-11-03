@@ -61,11 +61,11 @@
 					<label class="select" for="campusList">
 						<select id="campusList" onchange="getOption(this)" required="required">
 							<option value="" disabled="disabled" selected="selected">Select Campus</option>
-							<option value="Campus1">Campus 1</option>
-							<option value="Campus5">Campus 5</option>
+							<option value="Campus3">Campus 3</option>
 							<option value="Campus6">Campus 6</option>
+							<option value="Campus7">Campus 7</option>
+							<option value="Campus12">Campus 12</option>
 							<option value="Campus15">Campus 15</option>
-							<option value="Campus17">Campus 17</option>
 						</select>
 						<svg>
 							<use xlink:href="#select-arrow-down"></use>
@@ -78,11 +78,12 @@
 						</symbol>
 					</svg>
 					<div class="campusMap">
-						<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-							src="https://www.openstreetmap.org/export/embed.html?bbox=85.81505656242372%2C20.35035072425122%2C85.82235217094423%2C20.355521057111634&amp;layer=cyclemap"
-							style="border: 1px solid black"></iframe><br /><small><a
-								href="https://www.openstreetmap.org/#map=17/20.35294/85.81870&amp;layers=C">View Larger
-								Map</a></small>
+						<iframe class="campusMapIframe" width="425" height="350" frameborder="0" scrolling="no"
+							marginheight="0" marginwidth="0"
+							src="https://www.openstreetmap.org/export/embed.html?bbox=85.81371545791626%2C20.35035072425122%2C85.82101106643677%2C20.355521057111634&amp;layer=cyclemap&amp;marker=20.35293591231628%2C85.81736326217651"
+							style="border: 1px solid black"></iframe><br /><small><a class="campusMapA"
+								href="https://www.openstreetmap.org/?mlat=20.35294&amp;mlon=85.81736#map=17/20.35294/85.81736&amp;layers=C">View
+								Larger Map</a></small>
 					</div>
 				</div>
 			</section>
@@ -98,14 +99,24 @@
 					<label class="select" for="hostelList">
 						<select id="hostelList" required="required">
 							<option value="" disabled="disabled" selected="selected">Select Hostel</option>
-							<option value="KP5"> KP 5</option>
+							<option value="KP1"> KP 1</option>
+							<option value="KP4"> KP 4</option>
 							<option value="KP15"> KP 15</option>
 							<option value="QC1"> QC 1</option>
+							<option value="QC4"> QC 4</option>
 						</select>
 						<svg>
 							<use xlink:href="#select-arrow-down"></use>
 						</svg>
 					</label>
+					<div class="hostelMap">
+						<iframe class="hostelMapIframe" width="425" height="350" frameborder="0" scrolling="no"
+							marginheight="0" marginwidth="0"
+							src="https://www.openstreetmap.org/export/embed.html?bbox=85.81371545791626%2C20.35035072425122%2C85.82101106643677%2C20.355521057111634&amp;layer=cyclemap&amp;marker=20.35293591231628%2C85.81736326217651"
+							style="border: 1px solid black"></iframe><br /><small><a class="hostelMapA"
+								href="https://www.openstreetmap.org/?mlat=20.35294&amp;mlon=85.81736#map=17/20.35294/85.81736&amp;layers=C">View
+								Larger Map</a></small>
+					</div>
 				</div>
 			</section>
 			<section class="post">
@@ -120,13 +131,25 @@
 					<label class="select" for="activityList">
 						<select id="activityList" required="required">
 							<option value="" disabled="disabled" selected="selected">Select Activity</option>
-							<option value="Gym Campus 12"> Gym Campus 12</option>
+							<option value="KSAC"> KSAC</option>
+							<option value="Auditorium2"> Auditorium 1</option>
+							<option value="Auditorium2"> Auditorium 1</option>
+							<option value="Auditorium2"> Auditorium 1</option>
+							<option value="Auditorium2"> Auditorium 1</option>
 							<option value="Auditorium2"> Auditorium 1</option>
 						</select>
 						<svg>
 							<use xlink:href="#select-arrow-down"></use>
 						</svg>
 					</label>
+					<div class="activityMap">
+						<iframe class="activityMapIframe" width="425" height="350" frameborder="0" scrolling="no"
+							marginheight="0" marginwidth="0"
+							src="https://www.openstreetmap.org/export/embed.html?bbox=85.81371545791626%2C20.35035072425122%2C85.82101106643677%2C20.355521057111634&amp;layer=cyclemap&amp;marker=20.35293591231628%2C85.81736326217651"
+							style="border: 1px solid black"></iframe><br /><small><a class="activityMapA"
+								href="https://www.openstreetmap.org/?mlat=20.35294&amp;mlon=85.81736#map=17/20.35294/85.81736&amp;layers=C">View
+								Larger Map</a></small>
+					</div>
 				</div>
 			</section>
 
