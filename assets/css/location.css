@@ -99,7 +99,7 @@ pointer-events: none;
 user-select: none;
 }
 
-.campusMap{ 
+/* .campusMap{ 
     transition: height 10000ms;
 }
 .campusMapIframe{
@@ -109,7 +109,18 @@ user-select: none;
 .campusMapA{
     opacity: 0;
     transition: opacity 1000ms;
+} */
+/* .campusMap{ 
+    transition: height 10000ms;
 }
+.campusMapIframe{
+    opacity: 0;
+    transition: height 1000ms, opacity 1000ms;
+}
+.campusMapA{
+    opacity: 0;
+    transition: opacity 1000ms;
+} */
 .campusMap--transparent{
     /* max-height:0; */
     height:0;
