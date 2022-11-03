@@ -72,6 +72,40 @@ input, select, textarea {
 	appearance: none;
 }
 
+.usernames{
+	display:inline;
+	height:
+}
+
+.usericons
+{
+	display: inline-block;
+	height: 4vw;
+    width: 4vw;
+	margin:20px;
+    background-image: url(https://game-cdn.appsample.com/tof/images/logo.png);
+    background-position: center;
+    background-size: contain;
+    clip-path: circle(50%);
+}
+
+.social
+{
+	width:80w;
+	/* height:50vw; */
+	margin: 0 auto;
+	background-color: #eaeaea;
+	border-radius: 2.5%;
+}
+.social p{
+	margin-left: 5px;
+}
+.social img{
+	display: inline-block;
+	margin: 0 auto;
+	width: 100%;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -301,7 +335,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #18bfef !important;
+			color: #18ef38 !important;
 		}
 
 	strong, b {
@@ -3540,7 +3574,7 @@ input, select, textarea {
 
 			#header a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: #18ef38 !important;
 			}
 
 		#header strong, #header b {
@@ -3661,7 +3695,7 @@ input, select, textarea {
 
 			#nav a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: #18ef38 !important;
 			}
 
 		#nav strong, #nav b {
@@ -4181,7 +4215,7 @@ input, select, textarea {
 
 				#footer .pagination a:hover + a,
 				#footer .pagination a:hover + span {
-					border-left-color: #18bfef;
+					border-left-color: #18ef38;
 				}
 
 			#footer .pagination a.active {
@@ -4418,7 +4452,7 @@ input, select, textarea {
 
 			#copyright a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: #18ef38 !important;
 			}
 
 		#copyright strong, #copyright b {
