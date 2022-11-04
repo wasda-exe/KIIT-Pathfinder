@@ -37,7 +37,11 @@ hostelMapList.forEach(element => {
 });
 
 const activityMapList = [
-    {name:'KSAC', lat:20.3566019, lon:85.7488876, desc:``, addr:``},
+    {name:'KSAC', lat:20.3566019, lon:85.7488876, desc:``, addr:`Kalinga Institute of Industrial Technology, Chandaka Industrial Estate, Patia, Bhubaneswar, Odisha 751024`},
+    {name:'RoseGarden', lat:20.3513649501, lon:85.8162450998, desc:``, addr:`Campus 12, Prasanti Vihar Road, KIIT University, Bhubaneswar, India 751024`},
+    {name:'FoodCourt7', lat:20.3508422, lon:85.7459214, desc:``, addr:`Address: 751024, Chandaka Industrial Estate, K I I T University, Patia, Bhubaneswar, Odisha 751024`},
+    {name:'ScuplturePark', lat:20.3504725, lon:85.7497315, desc:``, addr:`Address: 9R29+5WR, KIIT Fashion Tech Rd, Chandaka Industrial Estate, K I I T University, Patia, Bhubaneswar, Odisha `},
+    {name:'KIITAmpitheatre', lat:20.3500175, lon:85.750923, desc:``, addr:`Amphitheatre, Chandaka Industrial Estate, K I I T University, Chandrasekharpur, Bhubaneswar, Odisha 751024`},
     // {name:'Campus3', lat:, lon:, desc:``, addr:``},
 ];
 
@@ -49,17 +53,96 @@ const activityMapList = [
 function getOption(ele){
     // console.log(document.getElementById('campusList').value);
     const selectedValue = ele.value;
-    for(let i = 0; i < campusMapList.length; i++)
+    const locationId = ele.getAttribute('id'); // returns string value of attribute
+    // const location = locationId.replace('list', ''); // hostel
+    // let locationMap = campusMap;
+    // let locationMapList = campusMapList;
+    // let locationId = ele.getAttribute('id');
+    // let locationMapIframe = document.querySelector("." + Object.keys({activityMap})[0] +'Iframe');
+    // let locationMapA = document.querySelector("." + Object.keys({activityMap})[0] +'A');
+    // console.log(ele.className);
+    // let locationMapIframe = document.querySelector("." + ele.className +'Iframe');
+    // let locationMapA = document.querySelector("." + ele.className +'A');
+    let locationMap = campusMap;
+    let locationMapList = campusMapList;
+    let locationMapIframe = campusMapIframe;
+    let locationMapA = campusMapA;
+    // if(location == 'campus')
+    // {
+
+    // }
+    if(locationId == 'hostelList')
     {
-        if(campusMapList[i].name == selectedValue)
+        locationMap = hostelMap;
+        locationMapList = hostelMapList;
+        locationMapIframe = hostelMapIframe;
+        locationMapA = hostelMapA;
+    }
+    else if(locationId == 'activityList')
+    {
+        locationMap = activityMap;
+        locationMapList = activityMapList;
+        locationMapIframe = activityMapIframe;
+        locationMapA = activityMapA;
+    }
+    // if("hostelMap" === Object.keys({hostelMap})[0])
+    // {
+    //     locationMap = hostelMap;
+    //     locationMapList = hostelMapList;
+    //     // locationMapIframe = 
+    //     // locationMapA
+    // }
+    // else if("activityMap" === Object.keys({activityMap})[0])
+    // {
+    //     locationMap = activityMap;
+    //     locationMapList = activityMapList;
+    //     // locationMapIframe
+    //     // locationMapA
+    // }
+    // console.log(Object.keys({hostelMap})[0]);
+    console.log(location);
+    console.log(locationMapIframe);
+    console.log(locationMapA);
+    // console.log("."+Object.keys({activityMap})[0] +'Iframe');
+    // console.log(Object.keys({activityMap})[0] + 'A');
+    for(let i = 0; i < locationMapList.length; i++)
+    {
+        if(locationMapList[i].name == selectedValue)
         {
             // salted version
-            campusMapIframe.src = `https://www.openstreetmap.org/export/embed.html?bbox=${campusMapList[i].lon}%2C${campusMapList[i].lat}%2C${campusMapList[i].lon+0.002}%2C${campusMapList[i].lat+0.002}&layer=mapnik&marker=${campusMapList[i].lat}%2C${campusMapList[i].lon}`;
+            locationMapIframe.src = `https://www.openstreetmap.org/export/embed.html?bbox=${locationMapList[i].lon}%2C${locationMapList[i].lat}%2C${locationMapList[i].lon+0.002}%2C${locationMapList[i].lat+0.002}&layer=mapnik&marker=${locationMapList[i].lat}%2C${locationMapList[i].lon}`;
 
-            campusMapA.href = `https://www.openstreetmap.org/?mlat=${campusMapList[i].lat}&amp;mlon=${campusMapList[i].lon}#map=17/${campusMapList[i].lat}/${campusMapList[i].lon}`;
+            locationMapA.href = `https://www.openstreetmap.org/?mlat=${locationMapList[i].lat}&amp;mlon=${locationMapList[i].lon}#map=17/${locationMapList[i].lat}/${locationMapList[i].lon}`;
         }
     }
 }
+// let locationMap = campusMap;
+    // let locationMapList = campusMapList;
+    // let locationId = ele.getAttribute('id');
+// function getOption(ele){
+//     // console.log(document.getElementById('campusList').value);
+//     const selectedValue = ele.value;
+//     let locationMap = campusMap;
+//     let locationList = undefined;
+//     if(ele.className === hostelMap)
+//     {
+//         locationMap = hostelMap;
+//     }
+//     else if(ele.className === activityMap)
+//     {
+//         locationMap = activityMap;
+//     }
+//     for(let i = 0; i < campusMapList.length; i++)
+//     {
+//         if(campusMapList[i].name == selectedValue)
+//         {
+//             // salted version
+//             campusMapIframe.src = `https://www.openstreetmap.org/export/embed.html?bbox=${campusMapList[i].lon}%2C${campusMapList[i].lat}%2C${campusMapList[i].lon+0.002}%2C${campusMapList[i].lat+0.002}&layer=mapnik&marker=${campusMapList[i].lat}%2C${campusMapList[i].lon}`;
+
+//             campusMapA.href = `https://www.openstreetmap.org/?mlat=${campusMapList[i].lat}&amp;mlon=${campusMapList[i].lon}#map=17/${campusMapList[i].lat}/${campusMapList[i].lon}`;
+//         }
+//     }
+// }
 
 // campusMapIframe.src = `https://www.openstreetmap.org/export/embed.html?bbox=${campusMapList[i].lon}%2C${campusMapList[i].lat}%2C${campusMapList[i].lon+0.002}%2C${campusMapList[i].lat+0.002}` + "&amp;layer=mapnik&amp;marker=" + `${campusMapList[i].lat}%2C${campusMapList[i].lon}`;
 

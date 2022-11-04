@@ -97,7 +97,7 @@
 				<div class="image main"><img src="images/kiit-hostel.png" alt="" /></div>
 				<div class="dropdown">
 					<label class="select" for="hostelList">
-						<select id="hostelList" required="required">
+						<select id="hostelList" onchange="getOption(this)" required="required">
 							<option value="" disabled="disabled" selected="selected">Select Hostel</option>
 							<option value="KP1"> KP 1</option>
 							<option value="KP4"> KP 4</option>
@@ -129,14 +129,13 @@
 				<div class="image main"><img src="images/KIIT-Fest-2019-Inaguration-Day-1-4.jpg" alt="" /></div>
 				<div class="dropdown">
 					<label class="select" for="activityList">
-						<select id="activityList" required="required">
+						<select id="activityList" onchange="getOption(this)" required="required">
 							<option value="" disabled="disabled" selected="selected">Select Activity</option>
 							<option value="KSAC"> KSAC</option>
-							<option value="Auditorium2"> Auditorium 1</option>
-							<option value="Auditorium2"> Auditorium 1</option>
-							<option value="Auditorium2"> Auditorium 1</option>
-							<option value="Auditorium2"> Auditorium 1</option>
-							<option value="Auditorium2"> Auditorium 1</option>
+							<option value="RoseGarden"> Rose Garden</option>
+							<option value="FoodCourt7"> Food Court 7</option>
+							<option value="ScuplturePark"> Scuplture Park</option>
+							<option value="KIITAmpitheatre"> KIIT Ampitheatre 1</option>
 						</select>
 						<svg>
 							<use xlink:href="#select-arrow-down"></use>
