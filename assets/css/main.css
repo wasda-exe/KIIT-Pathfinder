@@ -104,7 +104,7 @@ input, select, textarea {
 	margin-left: 20px;
 	margin-right: 10px;
 	margin-bottom: 10px;
-    background-image: url(https://game-cdn.appsample.com/tof/images/logo.png);
+    background-image: url("../../images/community_user.jpeg");
     background-position: center;
     background-size: contain;
 	border-radius: 45%;
@@ -3844,6 +3844,11 @@ input, select, textarea {
 
 		#main > .post {
 			padding: 8rem 8rem 6rem 8rem ;
+		}
+		#main > .post2
+		{
+			padding: 2rem 8rem 6rem 8rem ;
+			border-top: solid 0px #eeeeee;
 		}
 
 			#main > .post header.major > .date {
