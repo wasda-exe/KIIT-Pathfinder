@@ -32,16 +32,10 @@
 			<ul class="links">
 				<li><a href="index.html">Home</a></li>
 				<li class="active"><a href="location.html">Location</a></li>
-				<li><a href="location.html">Bus Routes & Shuttle Services</a></li>
+				<li><a href="locations.html">Bus Routes & Shuttle Services</a></li>
 				<li><a href="event.html">Events</a></li>
 				<li><a href="community.html">Community</a></li>
 			</ul>
-			<!-- <ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul> -->
 		</nav>
 
 		<!-- Main -->
@@ -56,7 +50,16 @@
 					<p>KIIT has over 20 Campuses. Choose the one you want the location and details of from the below
 						dropdown.</p>
 				</header>
-				<div class="image main"><img src="images/KIIT-University-Campus-KSOM.jpg" alt="" /></div>
+				<div class="image-description image-description--campus">
+					<!-- <div class="image main"> -->
+					<div class="image-description__image">
+						<img alt="" />
+					</div>
+					<div class="description">
+						<p class="des"></p>
+						<p class="add"></p>
+					</div>
+				</div>
 				<div class="dropdown">
 					<label class="select" for="campusList">
 						<select id="campusList" onchange="getOption(this)" required="required">
@@ -78,7 +81,13 @@
 						</symbol>
 					</svg>
 					<div class="campusMap">
-						<iframe class="campusMapIframe" width="425" height="350" frameborder="0" scrolling="no"
+						<!-- <iframe class="campusMapIframe" width="425" height="350" frameborder="0" scrolling="no"
+							marginheight="0" marginwidth="0"
+							src="https://www.openstreetmap.org/export/embed.html?bbox=85.81371545791626%2C20.35035072425122%2C85.82101106643677%2C20.355521057111634&amp;layer=cyclemap&amp;marker=20.35293591231628%2C85.81736326217651"
+							style="border: 1px solid black"></iframe><br /><small><a class="campusMapA"
+								href="https://www.openstreetmap.org/?mlat=20.35294&amp;mlon=85.81736#map=17/20.35294/85.81736&amp;layers=C">View
+								Larger Map</a></small> -->
+						<iframe class="campusMapIframe" width="850" height="700" frameborder="0" scrolling="no"
 							marginheight="0" marginwidth="0"
 							src="https://www.openstreetmap.org/export/embed.html?bbox=85.81371545791626%2C20.35035072425122%2C85.82101106643677%2C20.355521057111634&amp;layer=cyclemap&amp;marker=20.35293591231628%2C85.81736326217651"
 							style="border: 1px solid black"></iframe><br /><small><a class="campusMapA"
@@ -94,7 +103,16 @@
 					</h1>
 					<p>Find the location of your hostel from the below dropdown</p>
 				</header>
-				<div class="image main"><img src="images/kiit-hostel.png" alt="" /></div>
+				<div class="image-description image-description--hostel">
+					<!-- <div class="image main"> -->
+					<div class="image-description__image">
+						<img alt="" />
+					</div>
+					<div class="description">
+						<p class="des"></p>
+						<p class="add"></p>
+					</div>
+				</div>
 				<div class="dropdown">
 					<label class="select" for="hostelList">
 						<select id="hostelList" onchange="getOption(this)" required="required">
@@ -126,7 +144,16 @@
 					</h1>
 					<p>Choose an activity from the plethora of things to do in KIIT.</p>
 				</header>
-				<div class="image main"><img src="images/KIIT-Fest-2019-Inaguration-Day-1-4.jpg" alt="" /></div>
+				<div class="image-description image-description--activity">
+					<!-- <div class="image main"> -->
+					<div class="image-description__image">
+						<img alt="" />
+					</div>
+					<div class="description">
+						<p class="des"></p>
+						<p class="add"></p>
+					</div>
+				</div>
 				<div class="dropdown">
 					<label class="select" for="activityList">
 						<select id="activityList" onchange="getOption(this)" required="required">
@@ -207,7 +234,8 @@
 		<div id="copyright">
 			<ul>
 				<li>&copy;KIIT Pathfinder</li>
-				<li>Design: <a href="https://github.com/wasda-exe/KIIT-Pathfinder" target="_blank">Team Audentes</a>
+				<li>Design: <a href="https://github.com/rajobrata2003/devsprint22_audentes" target="_blank">Team
+						Audentes</a>
 				</li>
 			</ul>
 		</div>
