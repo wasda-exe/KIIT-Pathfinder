@@ -3,8 +3,7 @@
     top:0;
     margin-top: 33.5%;
     padding-top: 0%;	
-    border-radius: 0;																						
-
+    border-radius: 0;	
 }
 .carousel-control-next{
     position: absolute;
@@ -20,21 +19,58 @@
     border-radius: 0;																						
 
 }
-    .carousel-control-next2{
-        position: absolute;
-        top:0;
-        margin-top: 33.5%;
-        padding-top: 0%;
-        margin-left: 90.75%;
-    }
-.height-fix--align-items{
-    /* display: flex; */
-    /* align-items: center; */
-    /* height: 500px; */
-    padding: auto 300px;
+.carousel-control-next2{
+    position: absolute;
+    top:0;
+    margin-top: 33.5%;
+    padding-top: 0%;
+    margin-left: 89.3%;
 }
+
 .carousel-item img{
     margin: 0 auto; /* this will align the image to center. */
-      width: auto; /* for those images which don't have a width specified, but has a max-height will be auto adjusted */
+    width: auto; /* for those images which don't have a width specified, but has a max-height will be auto adjusted */
+}
+.title_style{
+    color: black;
+    /* background-color: rgba(0, 0, 0, 0.700); */
+}
+
+.para_text{
+    color: black;
+    /* background-color: rgba(0, 0, 0, 0.700); */
+    text-align: center;
+    margin-top: auto;
+    opacity: 1 ;
+}
+
+
+/* .texthover{
+    /* background-color: bisque; */
+ */
+
+.texthover:hover
+{
+    /* background-color: aliceblue; */
+    opacity: 0.5;
+}
+
+
+/* .para_text:hover {
+    opacity: 1;
+}
+.para_text:active{
+    opacity: 1;
+} */
+
+/* .carousel-item:hover{
+    opacity:0.5;
+} */
+
+.d-block:hover {
+    opacity: 0.3;
+}
+.d-block:active{
+    opacity: 0.3;
 }
 
