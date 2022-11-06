@@ -82,8 +82,18 @@ function getOption(ele){
             // const locationImageDescIMG = locationImageDesc.getElementsByTagName('img').src = locationMapList[i].;
             // locationImageDesc.getElementsByTagName('img')[0].src = "../../images/KIIT-University-Campus-KSOM.jpg";
             locationImageDesc.getElementsByTagName('img')[0].src = locationMapList[i].imag;
-            locationImageDesc.getElementsByTagName('img')[0].style.width = "40vw";
-            locationImageDesc.getElementsByTagName('img')[0].style.height = "22.5vw";
+            if(window.innerWidth < 550)
+            {
+                locationImageDesc.querySelector('.description').style.width = "60vw";
+                locationImageDesc.getElementsByTagName('img')[0].style.width = "60vw";
+                locationImageDesc.getElementsByTagName('img')[0].style.height = "33.75vw";
+            }
+            else
+            {
+                locationImageDesc.querySelector('.description').style.width = "auto";
+                locationImageDesc.getElementsByTagName('img')[0].style.width = "40vw";
+                locationImageDesc.getElementsByTagName('img')[0].style.height = "22.5vw";
+            }
             // console.log(locationImageDesc.getElementsByTagName('img')[0]);
             // locationImageDesc.getElementsByTagName('img').src = "../../images/KIIT-University-Campus-KSOM.jpg";
             
